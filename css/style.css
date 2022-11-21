@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	padding: 30px;
+	display: flex;
+	align-items: end;
+	background-image: url(../img/kun.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #15181f;
+	transition: all 1.5s;
+	color: aqua;
+	font-size: 30px;
+}
+h1 {
+	line-height: 200px;
+	font-family: "Anton", sans-serif;
+	letter-spacing: 10px;
+}
+body h5 {
+	font-family: "Kanit", sans-serif;
+	letter-spacing: 5px;
+	width: 800px;
+	line-height: 50px;
+}
+.container {
+	width: 100%;
+	position: relative;
+	margin-bottom: 30px;
+}
+#toggle {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 40px;
+	width: 75px;
+	background-color: lawngreen;
+	position: absolute;
+	right: 0;
+	border-radius: 20px;
+	outline: none;
+	cursor: pointer;
+}
+#toggle:after {
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	background-color: #ffffff;
+	top: 5px;
+	left: 7px;
+	border-radius: 50%;
+}
+.dark-theme {
+	background-image: url(../img/tun.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #e5e5e5;
+}
+.dark-theme #toggle {
+	background-color: aqua;
+	transition: 1.5s;
+}
+.dark-theme #toggle:after {
+	background-color: transparent;
+	box-shadow: 10px 10px #151515;
+	top: -4px;
+	left: 30px;
+}
